@@ -31,12 +31,12 @@ ccs = [
 
 # print source code, compile it, modify it, and loop ad vitam eternam
 src = '1100000000001011000000001001011110111100'
-print(('SOURCE CODE:', src))
+print('SOURCE CODE:', src)
 for name, cc in ccs:
     print('==========================================================')
-    print(('\t\t' + name))
+    print('\t\t' + name)
     print('==========================================================')
-    print((cc.compile(src)))
+    print(cc.compile(src))
     print('\n')
 
 

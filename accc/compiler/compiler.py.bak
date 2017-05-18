@@ -283,10 +283,10 @@ class Compiler():
         and return it with sizes of an identificator as lexem_type->identificator_size"""
         # number of existing character, and returned dicts
         len_alph = len(self.alphabet)
-        identificators_table = {k:{} for k in list(self.voc_values.keys())}
-        identificators_sizes = {k:-1 for k in list(self.voc_values.keys())}
+        identificators_table = {k:{} for k in self.voc_values.keys()}
+        identificators_sizes = {k:-1 for k in self.voc_values.keys()}
 
-        for lexem_type, vocabulary in list(self.voc_values.items()):
+        for lexem_type, vocabulary in self.voc_values.items():
             # find number of different values that can be found, 
             #   and size of an identificator.
             len_vocb = len(vocabulary)

@@ -42,9 +42,9 @@ if __name__ == '__main__':
     while True:
         print(source)
         msource = mutated(source, alphabet)
-        print((''.join([' ' if n == m else m for n, m in zip(source, msource)])))
-        print((cc.compile(msource)))
-        print((source_code_size*'-'))
+        print(''.join([' ' if n == m else m for n, m in zip(source, msource)]))
+        print(cc.compile(msource))
+        print(source_code_size*'-')
         source = msource
         time.sleep(0.1)
 

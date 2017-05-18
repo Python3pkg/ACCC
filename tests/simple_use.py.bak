@@ -34,8 +34,8 @@ src = ''.join((random.choice(dc.alphabet) for _ in range(40)))
 while True:
     print(src)
     msrc = mutated(src)
-    print((''.join([' ' if n == m else '!' for n, m in zip(src, msrc)])))
-    print((dc.compile(msrc)))
+    print(''.join([' ' if n == m else '!' for n, m in zip(src, msrc)]))
+    print(dc.compile(msrc))
     print('\n------------\n\n\n')
 
     time.sleep(0.4)
